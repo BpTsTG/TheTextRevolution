@@ -1,0 +1,12 @@
+*
+{
+	box-sizing:border-box;
+	color:black;
+}
+body, html
+{
+	background-color:#f3f3f3;
+	background:url("/css/1654740.jpg") no-repeat fixed;
+	background-size: auto 100%;
+	//background: radial-gradient( circle at center, white, black);
+}

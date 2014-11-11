@@ -1,0 +1,31 @@
+<!doctype html>
+<html>
+<head>
+	<title>Dokument | <%= page.title  %></title>
+	<link rel="stylesheet" "type="text/css" href="css/main.css" />
+	<meta charset="utf-8" />
+</head>
+<body>
+
+
+	<div id="house">
+		<div class="layout">
+			<form method="get" action="/">
+				<label for="dokopen">Your file</label>
+				<input id="dokopen" class="block" type="text"/>
+				<label for="name">Your pseudo</label>
+				<input id="name"    class="block" type="text"/>
+					
+				<button class="opendok" type="submit" id="open">open</button>
+			</form>
+		</div>
+	</div>
+
+
+<script src = "/js/jquery-2.1.1.min.js" ></script>
+<!--<script src="/socket.io/socket.io.js"></script>-->
+<script>
+$(function(){$("button#open").click(function(){$("form").attr("action","/"+$("#dokopen").val());});});
+</script>
+</body>
+</html>

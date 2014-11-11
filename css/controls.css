@@ -1,0 +1,93 @@
+div.layout
+{
+	display:inline-block;
+	
+	/*height:30px;*/
+	height:auto;
+	
+	padding: 1px;
+	margin: 1px;
+
+	border:1px solid #e0e0e0;
+	border-radius: 1px;
+	
+	//background-color:#f3f3f3;
+	background-color:rgba(200,255,200,0.3);
+	color:#909090;
+}
+button
+{
+	display:inline-block;
+	margin:3px;
+	padding:1px;
+	/*background-color:#e5e5e5;*/
+	background-color:rgba(255, 255, 255, 0.6);
+	border: 1px solid #e1e1e1;
+	border-radius: 2px;
+	transition: 0.1s ease;
+	cursor: pointer;
+	color:#909090;
+	font-weight:bold;
+	transition:0.1s ease-in 0s;
+}
+button:hover
+{
+	box-shadow:0px 0px 3px blue;	
+	transition:0.1s ease-in 0s;
+}
+button.active
+{
+	box-shadow:0px 0px 5px #555 inset;	
+}
+
+
+
+input
+{
+	/*background-color:#eee;*/
+	background-color:rgba(0, 0, 0, 0.6);
+	color:white;
+	border:1px solid #e5e5e5;
+	border-radius:3px;
+	transition:0.1s ease-in 0s;
+}
+input:hover
+{
+	box-shadow:0px 0px 3px purple;
+	transition:0.1s ease-in 0s;
+}
+label
+{
+	margin-right:5px;
+	/*color:#666;*/
+	color:white;
+	text-shadow:2px 1px 1px black;
+}
+.block
+{
+	display:block;
+}
+/*dokbuttons*/
+.dokbuttons
+{
+	position: absolute;
+	bottom:100%;
+	right: 0%;
+	
+	border-radius:3px;
+
+	opacity:0;
+	background: rgba(0,0,0,0);
+	transition:0.3s ease;
+}
+.dokument:hover .dokbuttons
+{
+	transition:0.1s ease;
+	opacity:1;
+}
+/**/
+
+input[type="radio"]
+{
+	display:none;
+}
